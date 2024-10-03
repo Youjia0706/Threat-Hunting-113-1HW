@@ -1,0 +1,16 @@
+========================================Analytic I====================================================
+@timestamp,Hostname,SubjectUserName,ProcessName,ObjectName,AccessMask,EventID
+2020-08-07T14:32:57.592Z,WORKSTATION5.theshire.local,pgustavo,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,\Device\HarddiskVolume2\Windows\System32\lsass.exe,0x1010,4656
+2020-08-07T14:32:57.592Z,WORKSTATION5.theshire.local,pgustavo,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,\Device\HarddiskVolume2\Windows\System32\lsass.exe,0x10,4663
+
+========================================Analytic II====================================================
+@timestamp,Hostname,SourceImage,TargetImage,GrantedAccess,SourceProcessGUID,CallTrace
+2020-08-07T14:32:57.589Z,WORKSTATION5.theshire.local,C:\windows\System32\WindowsPowerShell\v1.0\powershell.exe,C:\windows\system32\lsass.exe,0x1010,{297bc33e-65d0-5f2d-8207-000000000400},C:\windows\SYSTEM32\ntdll.dll+9c534|C:\windows\System32\KERNELBASE.dll+2726e|UNKNOWN(000002EE319439BF)
+
+========================================Analytic III====================================================
+ProcessGuid,Image,ImageLoaded
+{297bc33e-65d0-5f2d-8207-000000000400},C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,4
+
+========================================Analytic IV====================================================
+ImageLoaded,@timestamp,Hostname,SourceImage,TargetImage,GrantedAccess,SourceProcessGUID
+4,2020-08-07T14:32:57.589Z,WORKSTATION5.theshire.local,C:\windows\System32\WindowsPowerShell\v1.0\powershell.exe,C:\windows\system32\lsass.exe,0x1010,{297bc33e-65d0-5f2d-8207-000000000400}
